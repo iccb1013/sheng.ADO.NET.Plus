@@ -43,6 +43,12 @@ namespace Linkup.Data
 
         }
 
+        public DatabaseWrapper(string connectionString, bool directly)
+        {
+            _database = new SqlDatabase(connectionString);
+
+        }
+
         /// <summary>
         ///  int affectedRowCount
         /// </summary>
@@ -358,8 +364,8 @@ namespace Linkup.Data
                     }
                     catch (Exception exception)
                     {
-                        if (transaction != null)
-                            transaction.Rollback();
+                        //if (transaction != null)
+                        //    transaction.Rollback();
 
                         string logMessage = item.ToString();
                         logMessage += Environment.NewLine + exception.StackTrace;

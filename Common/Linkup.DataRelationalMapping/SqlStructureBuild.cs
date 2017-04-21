@@ -66,6 +66,10 @@ namespace Linkup.DataRelationalMapping
             {
                 return GetUpdateSqlExpression();
             }
+            else if (Type == SqlExpressionType.Delete)
+            {
+                return GetDeleteSqlExpression();
+            }
             else
             {
                 Debug.Assert(false, "不支持的 SqlExpressionType");
@@ -185,7 +189,6 @@ namespace Linkup.DataRelationalMapping
                 }
 
                 int andLength = " AND ".Length;
-
                 sql.Remove(sql.Length - andLength, andLength);
             }
 
@@ -195,6 +198,50 @@ namespace Linkup.DataRelationalMapping
 
             return sqlExpression;
         } 
+
+        private SqlExpression GetDeleteSqlExpression()
+        {
+            List<SqStructureBuildParameter> parameterList = (from c in _parameterList where c.IsWhere select c).ToList();
+            if (parameterList.Count == 0)
+            {
+                throw new Exception("必须设置 IsWhere 为 true 的参数。");
+            }
+
+            StringBuilder sql = new StringBuilder();
+            List<SqlParameter> sqlParameterList = new List<SqlParameter>();
+
+            sql.Append("DELETE FROM [" + Table + "] WHERE ");
+
+            foreach (SqStructureBuildParameter item in parameterList)
+            {
+                sql.Append("[" + item.Field + "]");
+                sql.Append("=");
+
+                string parameterName = String.Format("@{0}", item.Field);
+
+                sql.Append(parameterName);
+                sql.Append(" AND ");
+
+                if ((from c in sqlParameterList
+                     where c.ParameterName == parameterName
+                     select c).Count() == 0)
+                {
+                    SqlParameter parameter = new SqlParameter();
+                    parameter.ParameterName = parameterName;
+                    parameter.Value = item.Value;
+                    sqlParameterList.Add(parameter);
+                }
+            }
+
+            int andLength = " AND ".Length;
+            sql.Remove(sql.Length - andLength, andLength);
+
+            SqlExpression sqlExpression = new SqlExpression();
+            sqlExpression.Sql = sql.ToString();
+            sqlExpression.ParameterList = sqlParameterList;
+
+            return sqlExpression;
+        }
 
     }
 
