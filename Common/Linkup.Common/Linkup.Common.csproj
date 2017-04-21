@@ -90,6 +90,9 @@
     <Compile Include="FastReflection\PropertyAccessor.cs" />
     <Compile Include="FastReflection\PropertyAccessorCache.cs" />
     <Compile Include="FastReflection\PropertyAccessorFactory.cs" />
+    <Compile Include="Http\HttpRequestArgs.cs" />
+    <Compile Include="Http\HttpRequestResult.cs" />
+    <Compile Include="Http\HttpService.cs" />
     <Compile Include="JsonHelper.cs" />
     <Compile Include="ObjectSnapshot\ISnapshot.cs" />
     <Compile Include="ObjectSnapshot\ObjectSnapshot.cs" />
