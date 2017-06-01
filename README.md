@@ -1,3 +1,5 @@
+# sheng.ADO.NET.Plus
+
 这个组件是我前两年写的，写 sheng.ADO.NET.Plus 并不是闲的无聊要造个轮子玩，而是我在自己的项目开发中，切实遇到了一些问题需要解决：使用 EF 带来的不便和直接使用 ADO.NET 带来的不便，我需要一个介于两者之间的，高度自由的组件。
 
 升讯威 ADO.NET 增强组件  sheng.ADO.NET.Plus 有以下几个特点：
