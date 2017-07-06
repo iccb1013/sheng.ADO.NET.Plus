@@ -1,5 +1,5 @@
-﻿using Linkup.Common;
-using Linkup.Data;
+﻿using Sheng.Kernal;
+using Sheng.AdoNetPlus;
 using System;
 using System.Collections.Generic;
 using System.Linq;

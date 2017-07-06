@@ -77,12 +77,12 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.Location = new System.Drawing.Point(50, 38);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(192, 16);
             this.label3.TabIndex = 4;
-            this.label3.Text = "sheng.ADO.NET.Plus V1.3";
+            this.label3.Text = "sheng.ADO.NET.Plus V1.5";
             // 
             // Form1
             // 

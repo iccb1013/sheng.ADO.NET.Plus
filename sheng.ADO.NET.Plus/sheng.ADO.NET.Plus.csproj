@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>sheng.ADO.NET.Plus</RootNamespace>
     <AssemblyName>sheng.ADO.NET.Plus</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
@@ -102,17 +102,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Common\Linkup.Common\Linkup.Common.csproj">
-      <Project>{2753ed31-d787-41f3-893c-58df187da1d8}</Project>
-      <Name>Linkup.Common</Name>
+    <ProjectReference Include="..\Sheng.AdoNetPlus\Sheng.AdoNetPlus.csproj">
+      <Project>{2bf29e80-4dc1-4943-837d-de429b90a5e8}</Project>
+      <Name>Sheng.AdoNetPlus</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Common\Linkup.DataRelationalMapping\Linkup.DataRelationalMapping.csproj">
-      <Project>{7bb22de3-7422-4ce4-bd77-b51565343dd2}</Project>
-      <Name>Linkup.DataRelationalMapping</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Common\Linkup.Data\Linkup.Data.csproj">
-      <Project>{bdf82c46-173e-4db0-b2bf-923571528a9e}</Project>
-      <Name>Linkup.Data</Name>
+    <ProjectReference Include="..\Sheng.Kernal\Sheng.Kernal.csproj">
+      <Project>{60c2de74-7898-458e-a464-9266a37347f0}</Project>
+      <Name>Sheng.Kernal</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
