@@ -15,4 +15,4 @@ sheng.ADO.NET.Plus 是一个介于 Entity Framework 和直接使用 ADO.NET 两�
 + 高性能，高灵活性，高可维护性。
 
 更好的排版和详细的使用说明见这里：
-http://sheng.city/post/github-ado-net-sheng-ado-net-plus-v1-3
+http://blog.shengxunwei.com/Home/Post/01b37f59-cbe3-4a86-a642-e2d8142ea0b7
