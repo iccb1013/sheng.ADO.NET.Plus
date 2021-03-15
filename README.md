@@ -1,5 +1,7 @@
 # sheng.ADO.NET.Plus
 
+请访问原版代码库，以获得最新更新: https://github.com/iccb1013/sheng.ADO.NET.Plus
+
 sheng.ADO.NET.Plus 是一个介于 Entity Framework 和直接使用 ADO.NET 两者之间的，高度自由高开发效率的数据库访问层组件。
 
 + 支持所有数据库原生操作（基于微软企业库的数据模块，并集成了日志模块，所有数据库操作异常使用企业库写日志）
@@ -15,4 +17,13 @@ sheng.ADO.NET.Plus 是一个介于 Entity Framework 和直接使用 ADO.NET 两�
 + 高性能，高灵活性，高可维护性。
 
 更好的排版和详细的使用说明见这里：
-http://blog.shengxunwei.com/Home/Post/01b37f59-cbe3-4a86-a642-e2d8142ea0b7
+https://blog.shengxunwei.com/Home/Post/01b37f59-cbe3-4a86-a642-e2d8142ea0b7
+
+详细说明请浏览：
+https://shengxunwei.com
+
+曹旭升（sheng.c）  
+QQ:279060597  
+Email：cao.silhouette@msn.com  
+@南京 
+
