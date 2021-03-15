@@ -11,7 +11,7 @@ sheng.ADO.NET.Plus 是一个介于 Entity Framework 和直接使用 ADO.NET 两�
 + 支持自动化的事务处理，可自动回滚。
 + 支持一对多的映射关系，即一个实体类可以映射到多张表。
 + 支持自动填充/补全数据实体类中的数据。
-+ 支持DataSet、DataTable、DataRow多种粒种的内存动态映射。
++ 支持DataSet、DataTable、DataRow多种粒度的内存动态映射。
 + 支持简单SQL构造器，支持自动生成简单的无模型映射的SQL语句。
 + 支持对实体字段的精细化处理，如将实体对象的任意 Property 标记 JsonAttribute 后，将自动以 Json 格式写入字段。
 + 高性能，高灵活性，高可维护性。
