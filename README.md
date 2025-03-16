@@ -1,6 +1,9 @@
 # sheng.ADO.NET.Plus
 
+https://me.shenlivechat.com
 cao.silhouette@msn.com
+
+Please visit the original code repository for the latest updates: https://github.com/iccb1013/sheng.ADO.NET.Plus .
 
 The core implementation of the code is simple and straightforward. I adhere to the principle of "just enough" and "solving the problem," without considering scenarios involving massive data sets (millions or billions of records, etc.) in the initial version. However, if I encounter such a scenario in my work, I will upgrade the system and address the issue.
 
